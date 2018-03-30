@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServerDetails>
+	<Servers>
+		<Server>
+			<serverDescription>SFE NZFOE SG/ES CopperWeb</serverDescription>
+			<serverName>SGW20036024</serverName>
+			<!--  actual configuration would be \SGW20036024\clearvision -->
+			<serverSharedPath>\\SGW20036024\clearvision</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>SGW20028335</DRserverName>
+				<DRserverSharedPath>\\SGW20028335\clearvision</DRserverSharedPath>
+			</DRServer>
+		</Server>
+		<Server>
+			<serverDescription>TOCOM SG/ES </serverDescription>
+			<serverName>SGW20036019</serverName>
+			<serverSharedPath>\\SGW20036019\clearvision</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>SGW20028330</DRserverName>
+				<DRserverSharedPath>\\SGW20028330\clearvision</DRserverSharedPath>
+			</DRServer>
+		</Server>
+		<Server>
+			<serverDescription>TFX ES  AND TSE SG/ES </serverDescription>
+			<serverName>SGW20036023</serverName>
+			<serverSharedPath>\\SGW20036023\clearvision</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>SGW20028331</DRserverName>
+				<DRserverSharedPath>\\SGW20028331\clearvision</DRserverSharedPath>
+			</DRServer>
+		</Server>		
+		<Server>
+			<serverDescription>HKFE  ES/MS/SS</serverDescription>
+			<serverName>HKW20037353</serverName>
+			<serverSharedPath>\\HKW20037353\clearvision</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>HKW20028338</DRserverName>
+				<DRserverSharedPath>\\HKW20028338\clearvision</DRserverSharedPath>
+			</DRServer>
+		</Server>
+		<Server>
+			<serverDescription>HKFE SG</serverDescription>
+			<serverName>HKW20012908</serverName>
+			<serverSharedPath>\\HKW20012908\clearvision</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>HKW20028337</DRserverName>
+				<DRserverSharedPath>\\HKW20028337\clearvision</DRserverSharedPath>
+			</DRServer>
+		</Server>
+		
+		<Server>
+			<serverDescription>SGX ES/SG</serverDescription>
+			<serverName>SGW20036020</serverName>
+			<serverSharedPath>\\SGW20036020\clearvision</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>SGW20028329</DRserverName>
+				<DRserverSharedPath>\\SGW20028329\clearvision</DRserverSharedPath>
+			</DRServer>
+		</Server>
+		<Server>
+			<serverDescription>SFE NZFOE TSE TFX TOCOM SGX MS/SS</serverDescription>
+			<serverName>SGW20036022</serverName>
+			<serverSharedPath>\\SGW20036022\clearvision</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>SGW20028336</DRserverName>
+				<DRserverSharedPath>\\SGW20028336\clearvision</DRserverSharedPath>
+			</DRServer>
+		</Server>
+		
+		<Server>
+			<serverDescription>4M  ES/MS welcome table</serverDescription>
+			<serverName>SGW20036025</serverName>
+			<serverSharedPath>\\SGW20036025\clearvision</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>SGW20028332</DRserverName>
+				<DRserverSharedPath>\\SGW20028332\clearvision</DRserverSharedPath>
+			</DRServer>
+		</Server>
+		<Server>
+			<serverDescription>WatchDog/ExportBack/EFLOW SGW20036026</serverDescription>
+			<serverName>GSNG19P10102</serverName>
+			<serverSharedPath>\\GSNG19P10102</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>SGW20028334</DRserverName>
+				<DRserverSharedPath>\\SGW20028334</DRserverSharedPath>
+			</DRServer>
+		</Server>													
+		<Server>
+			<serverDescription>COPERWeb-SGX</serverDescription>
+			<serverName>gsng11p10034</serverName>
+			<serverSharedPath>\\gsng11p10034</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>gsng11p10034</DRserverName>
+				<DRserverSharedPath>\\gsng11p10034</DRserverSharedPath>
+			</DRServer>
+		</Server>													
+															
+	</Servers>
+</ServerDetails>

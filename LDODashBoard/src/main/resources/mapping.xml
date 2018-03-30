@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping>
+<description>a mapping for the unix process execution application</description>
+
+<class name="Unixprocessdetails">
+	<map-to xml="UnixProcessExecute" />
+	<field name="unixprocessdetailList" type="Unixprocessdetail" collection="collection" />
+</class>
+
+<class name="Unixprocessdetail">
+
+	<field name="jobname" type="string" />
+	<field name="username" type="string"  />
+	<field name="password" type="string"  />
+	<field name="hostname" type="string"  />
+	<field name="jobdescription" type="string"  />
+	<field name="commands" type="Command" collection="collection" />
+</class>
+
+<class>
+	<field name="command" type="string" collection="collection"></field>
+</class>	
+
+
+</mapping>

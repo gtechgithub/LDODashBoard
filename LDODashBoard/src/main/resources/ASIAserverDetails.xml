@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServerDetails>
+	<Servers>
+		<Server>
+			<serverDescription>hello2</serverDescription>
+			<serverName>Helloserver2</serverName>
+			<serverSharedPath>C:\Program Files</serverSharedPath>
+			<serverUserId>hellouser2</serverUserId>
+			<serverUserPassword>hellopassword2</serverUserPassword>
+			<DRServer>
+				<DRserverName>HelloDRserver2</DRserverName>
+				<DRserverSharedPath>C:\Program Files</DRserverSharedPath>
+			</DRServer>
+		</Server>
+		<Server>
+			<serverDescription>hello1</serverDescription>
+			<serverName>Helloserver1</serverName>
+			<serverSharedPath>HelloserverPath1</serverSharedPath>
+			<serverUserId>hellouser1</serverUserId>
+			<serverUserPassword>hellopassword1</serverUserPassword>
+			<DRServer>
+				<DRserverName>HelloDRserver2</DRserverName>
+				<DRserverSharedPath>C:\Program Files</DRserverSharedPath>
+			</DRServer>
+		</Server>
+		<Server>
+			<serverDescription>hello3</serverDescription>
+			<serverName>Helloserver3</serverName>
+			<serverSharedPath>HelloserverPath3</serverSharedPath>
+			<serverUserId>hellouser3</serverUserId>
+			<serverUserPassword>hellopassword3</serverUserPassword>
+			<DRServer>
+				<DRserverName>HelloDRserver2</DRserverName>
+				<DRserverSharedPath>C:\Program Files</DRserverSharedPath>
+			</DRServer>
+		</Server>	
+	</Servers>		
+</ServerDetails>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServerDetails>
+	<Servers>
+		<Server>
+			<serverDescription>MDSWeb</serverDescription>
+			<serverName>INW20039778</serverName>
+			<serverSharedPath>\\INW20039778</serverSharedPath>
+			<serverUserId>SV_MATCHDERIVATIVE_P</serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>SGW20039779</DRserverName>
+				<DRserverSharedPath>\\SGW20039779</DRserverSharedPath>
+			</DRServer>
+		</Server>
+		<Server>
+			<serverDescription>Protector</serverDescription>
+			<serverName>INW20042005</serverName>
+			<serverSharedPath>\\INW20042005</serverSharedPath>
+			<serverUserId>SV_MATCHDERIVATIVE_P</serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>INW20042006</DRserverName>				
+				<DRserverSharedPath>\\INW20042006</DRserverSharedPath>
+			</DRServer>
+		</Server>
+															
+	</Servers>
+</ServerDetails>

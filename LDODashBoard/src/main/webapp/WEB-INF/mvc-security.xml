@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:security="http://www.springframework.org/schema/security"
+       xmlns:p="http://www.springframework.org/schema/p" 
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/security
+                           http://www.springframework.org/schema/security/spring-security-3.2.xsd">
+
+   <security:http auto-config="true">
+
+		
+
+
+        <security:intercept-url pattern="/css/*" access="IS_AUTHENTICATED_ANONYMOUSLY" />
+        <security:intercept-url pattern="/resource/*" access="IS_AUTHENTICATED_ANONYMOUSLY" />
+        <security:intercept-url pattern="/images/*" access="IS_AUTHENTICATED_ANONYMOUSLY" />
+        <security:intercept-url pattern="/js/*" access="IS_AUTHENTICATED_ANONYMOUSLY" />
+        <security:intercept-url pattern="/fail2LoginPage/*" access="IS_AUTHENTICATED_ANONYMOUSLY" />
+        <security:intercept-url pattern="/welcome*" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
+        
+        <security:intercept-url pattern="/**" access="ROLE_USER, ROLE_ADMIN" />
+        
+        <security:form-login login-page="/welcome" default-target-url="/showMessage"	
+            authentication-failure-handler-ref="authenticationFailureHandler" authentication-success-handler-ref="myAuthenticationSuccessHandler"/>
+        <security:logout logout-success-url="/logoutPage" />
+        
+    </security:http>
+    
+ <bean id="authenticationFailureHandler"
+        class="com.security.MySimpleUrlAuthenticationFailureHandler" />
+        
+ <bean id="myAuthenticationSuccessHandler"
+        class="com.security.UrlAuthenticationSuccessHandler" />
+
+
+    <security:authentication-manager>
+      <security:authentication-provider>
+        <security:user-service>
+            <security:user name="l1" password="l1" authorities="ROLE_USER" />
+            <security:user name="l2" password="l2" authorities="ROLE_ADMIN" />
+        </security:user-service>
+      </security:authentication-provider>
+    </security:authentication-manager>
+
+</beans>

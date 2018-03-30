@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServerDetails>
+	<Servers>
+		<Server>
+			<serverDescription>NYBOT 355 ES/SG</serverDescription>
+			<serverName>USW20035721</serverName>
+			<serverSharedPath>\\USW20035721\clearvision$</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>USW20028306</DRserverName>
+				<DRserverSharedPath>\\USW20028306\clearvision$</DRserverSharedPath>
+			</DRServer>
+		</Server>
+		<Server>
+			<serverDescription>NYMEX ES</serverDescription>
+			<serverName>USW20035726</serverName>
+			<serverSharedPath>\\USW20035726\clearvision$</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>USW20028311</DRserverName>
+				<DRserverSharedPath>\\USW20028311\clearvision$</DRserverSharedPath>
+			</DRServer>
+		</Server>
+		<Server>
+			<serverDescription>NYMEX/COMEX264 ES</serverDescription>
+			<serverName>USW20036357</serverName>
+			<serverSharedPath>\\USW20036357\clearvision$</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>USW20036360</DRserverName>
+				<DRserverSharedPath>\\USW20036360\clearvision$</DRserverSharedPath>
+			</DRServer>
+		</Server>
+		<Server>
+			<serverDescription>MFE 072/MFE 555 ES</serverDescription>
+			<serverName>USW20035725</serverName>
+			<serverSharedPath>\\USW20035725\clearvision$</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>USW20028310</DRserverName>
+				<DRserverSharedPath>\\USW20028310\clearvision$</DRserverSharedPath>
+			</DRServer>
+		</Server>
+		<Server>
+			<serverDescription>CBOT ES 01 ES</serverDescription>
+			<serverName>USW20035727</serverName>
+			<serverSharedPath>\\USW20035727\clearvision$</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>USW20028312</DRserverName>
+				<DRserverSharedPath>\\USW20028312\clearvision$</DRserverSharedPath>
+			</DRServer>
+		</Server>				
+		<Server>
+			<serverDescription>CBOT355-02 ES</serverDescription>
+			<serverName>USW20035729</serverName>
+			<serverSharedPath>\\USW20035729\clearvision$</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>USW20028307</DRserverName>
+				<DRserverSharedPath>\\USW20028307\clearvision$</DRserverSharedPath>
+			</DRServer>
+		</Server>				
+		<Server>
+			<serverDescription>CBOT264 /CBOT355-03 ES</serverDescription>
+			<serverName>USW20036356</serverName>
+			<serverSharedPath>\\USW20036356\clearvision$</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>USW20036359</DRserverName>
+				<DRserverSharedPath>\\USW20036359\clearvision$</DRserverSharedPath>
+			</DRServer>
+		</Server>				
+		<Server>
+			<serverDescription>CME ES /CME 01 ES</serverDescription>
+			<serverName>USW20035722</serverName>
+			<serverSharedPath>\\USW20035722\clearvision$</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>USW20028307</DRserverName>
+				<DRserverSharedPath>\\USW20028307\clearvision$</DRserverSharedPath>
+			</DRServer>
+		</Server>				
+		<Server>
+			<serverDescription>CME250 ES - 02 ES</serverDescription>
+			<serverName>USW20035730</serverName>
+			<serverSharedPath>\\USW20035730\clearvision$</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>USW20028312</DRserverName>
+				<DRserverSharedPath>\\USW20028312\clearvision$</DRserverSharedPath>
+			</DRServer>
+		</Server>				
+		<Server>
+			<serverDescription>CME264 ES</serverDescription>
+			<serverName>USW20036355</serverName>
+			<serverSharedPath>\\USW20036355\clearvision$</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>USW20036358</DRserverName>
+				<DRserverSharedPath>\\USW20036358\clearvision$</DRserverSharedPath>
+			</DRServer>
+		</Server>				
+		<Server>
+			<serverDescription>CME 03/CME_250_03_PROD ES</serverDescription>
+			<serverName>USW20035731</serverName>
+			<serverSharedPath>\\USW20035731\clearvision$</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>USW20028311</DRserverName>
+				<DRserverSharedPath>\\USW20028311\clearvision$</DRserverSharedPath>
+			</DRServer>
+		</Server>				
+		<Server>
+			<serverDescription>OCC CFE ES/CFE_289/OCC ELX/OCC NYSE-LIFFE ES</serverDescription>
+			<serverName>USW20035728</serverName>
+			<serverSharedPath>\\USW20035728\clearvision$</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>USW20028313</DRserverName>
+				<DRserverSharedPath>\\USW20028313\clearvision$</DRserverSharedPath>
+			</DRServer>
+		</Server>				
+		<Server>
+			<serverDescription>PNYCVS01/PNYCVS02 Member/SG </serverDescription>
+			<serverName>USW20035723</serverName>
+			<serverSharedPath>\\USW20035723\clearvision$</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>USW20035723</DRserverName>
+				<DRserverSharedPath>\\USW20035723\clearvision$</DRserverSharedPath>
+			</DRServer>
+		</Server>				
+		<Server>
+			<serverDescription>Eflow/WatchDog </serverDescription>
+			<serverName>USW20035724</serverName>
+			<serverSharedPath>\\USW20035724\clearvision$</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>USW20035724</DRserverName>
+				<DRserverSharedPath>\\USW20035724\clearvision$</DRserverSharedPath>
+			</DRServer>
+		</Server>				
+						
+	</Servers>
+</ServerDetails>

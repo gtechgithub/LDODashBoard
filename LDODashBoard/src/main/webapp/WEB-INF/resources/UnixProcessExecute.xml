@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unixdetails>
+	<unixprocessdetails>
+		<unixprocessdetail>
+			<jobname>COMFEE04D</jobname>
+			<username>gcothak2</username>
+			<password>mcc473SM</password>
+			<hostname>vpnl15a-0210.corpny.csfb.com</hostname>
+			<jobdescription>COMFEE04D Reporting Job</jobdescription>
+			<commands>
+				<command>date</command>
+				<command>ls -ltr /app/ControlMagent6.2/prod/PNYSHCTM01/sysout/COMFEE04D* | tail -1</command>
+				<command>grep -E 'ATL_REP_0|: ED0|: EDU|: EDT|: ATE|: TMP|: EO2|: BNY|: OPS|: TRADES|ATL_EOD|: ATL_EOD_B|: LDM1_EOD_B|: LDM4_EOD_B|: ATLEOD' `ls -ltr /app/ControlMagent6.2/prod/PNYSHCTM01/sysout/COMFEE04D* | tail -1 | awk  'BEGIN { FS=" " } { print $8 }'` | grep  -v '/app/java/bin/java'</command>
+			</commands>
+		</unixprocessdetail>
+		<unixprocessdetail>
+			<jobname>GCMLANDINGCHECHKOUT</jobname>
+			<username>gcothak2</username>
+			<password>njm889PQ</password>
+			<hostname>159.156.65.186</hostname>
+			<jobdescription>GCM Landing Checkout</jobdescription>
+			<commands>
+				<command>echo "listing the fxops landing"</command>
+				<command>echo "----------------------------------------------"</command>
+				<command>cd /app/tlm/incomingJAP7 ;ls -lart fxops*</command>
+				<command>echo ""</command>
+				<command>echo ""</command>
+				<command>echo "listing the stg landing"</command>
+				<command>echo "----------------------------------------------"</command>
+				<command>cd /app/tlm/incomingJAP7 ;ls -lart *stg</command>
+			</commands>
+		</unixprocessdetail>
+		
+	</unixprocessdetails>
+</unixdetails>

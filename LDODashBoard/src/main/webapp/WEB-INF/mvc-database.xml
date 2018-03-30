@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:lang="http://www.springframework.org/schema/lang"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
+                           http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+                           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+                           http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang.xsd">
+
+
+    <bean id="ldmdataSource" class="org.apache.tomcat.jdbc.pool.DataSource" destroy-method="close">
+        <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
+        <property name="url" value="jdbc:oracle:thin:@//PSGLOD2016-SCAN.ap.hedani.net:1522/PSG08400_LDM_APPL.WORLD"/>
+        <property name="username" value="FUTURES_RW"/>
+        <property name="password" value="futur35rw"/>
+    </bean>
+
+    <bean id="OpusdataSource" class="org.apache.tomcat.jdbc.pool.DataSource" destroy-method="close">
+        <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
+        <property name="url" value="jdbc:oracle:thin:@//PNYLOD2012-SCAN.am.hedani.net:1522/PNYODS11.WORLD"/>
+        <property name="username" value="options"/>
+        <property name="password" value="mask20110613pwd"/>
+    </bean>
+
+    <bean id="CdrdataSource" class="org.apache.tomcat.jdbc.pool.DataSource" destroy-method="close">
+        <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
+        <property name="url" value="jdbc:oracle:thin:@PNYLOD2065-SCAN.am.hedani.net:1522/PNY32800_COMMFEE.WORLD"/>
+        <property name="username" value="ldosupport"/>
+        <property name="password" value="ldosupport_2ol6"/>
+    </bean>
+
+	<!--  TSE/SYDNEY/4M CV  -->
+    <bean id="cvTSEdataSource" class="org.apache.tomcat.jdbc.pool.DataSource" destroy-method="close">
+        <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
+        <property name="url" value="jdbc:oracle:thin:@//PSGLOD2016-SCAN.ap.hedani.net:1522/PSG10000_CVISION_APPL.WORLD"/>
+        <property name="username" value="CVISION_RO"/>
+        <property name="password" value="D962283500D87167"/>
+    </bean>
+
+	<!--  HKFE CV  -->
+    <bean id="cvHKdataSource" class="org.apache.tomcat.jdbc.pool.DataSource" destroy-method="close">
+        <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
+        <property name="url" value="jdbc:oracle:thin:@//PHKLOD2003-SCAN.ap.hedani.net:1522/PHK02400_CVISION_APPL.WORLD"/>
+        <property name="username" value="CVISION_RO"/>
+        <property name="password" value="FD2F16F5A4D98288"/>
+    </bean>
+    
+	<!--  SGX CV -->
+    <bean id="cvSGXdataSource" class="org.apache.tomcat.jdbc.pool.DataSource" destroy-method="close">
+        <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
+        <property name="url" value="jdbc:oracle:thin:@//PSGLOD2016-SCAN.ap.hedani.net:1522/PSG09900.WORLD"/>
+        <property name="username" value="CVISION_SG_RO"/>
+        <property name="password" value="C97C23C4EBCF8BCE"/>
+    </bean>
+
+	<!--  TOCOM CV  -->
+    <bean id="cvTOCOMdataSource" class="org.apache.tomcat.jdbc.pool.DataSource" destroy-method="close">
+        <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
+        <property name="url" value="jdbc:oracle:thin:@//PSGLOD2016-SCAN.ap.hedani.net:1522/PSG09800.WORLD"/>
+        <property name="username" value="CVISION_NJ_RO"/>
+        <property name="password" value="A295F27739624012"/>
+    </bean>
+
+	<!--   LONDON CV PLN20100 database -->
+    <bean id="cvLN1dataSource" class="org.apache.tomcat.jdbc.pool.DataSource" destroy-method="close">
+        <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
+        <property name="url" value="jdbc:oracle:thin:@//PLNLOD2038-SCAN.eu.hedani.net:1522/PLN20100.WORLD"/>
+        <property name="username" value="cv_support"/>
+        <property name="password" value="cvsupport_p01"/>
+    </bean>
+
+	<!--   LONDON CV PLN20300 database -->
+    <bean id="cvLN3dataSource" class="org.apache.tomcat.jdbc.pool.DataSource" destroy-method="close">
+        <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
+        <property name="url" value="jdbc:oracle:thin:@//PLNLOD2038-SCAN.eu.hedani.net:1522/PLN20300.WORLD"/>
+        <property name="username" value="cv_support"/>
+        <property name="password" value="cvsupport_p03"/>
+    </bean>
+
+	<!--   LONDON CV PLN20300 database -->
+    <bean id="tlmdataSource" class="org.apache.tomcat.jdbc.pool.DataSource" destroy-method="close">
+        <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
+        <property name="url" value="jdbc:oracle:thin:@//PLNLOD2042-SCAN.eu.hedani.net:1522/PLN24400.WORLD"/>
+        <property name="username" value="PTG_MONITOR"/>
+        <property name="password" value="Qaswe_123"/>
+    </bean>
+
+	<!--   LONDON CV PLN20300 database -->
+    <bean id="tlmETLdataSource" class="org.apache.tomcat.jdbc.pool.DataSource" destroy-method="close">
+        <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
+        <property name="url" value="jdbc:oracle:thin:@//PLNLOD2042-SCAN.eu.hedani.net:1522/PLN24600.WORLD"/>
+        <property name="username" value="PTG_MONITOR"/>
+        <property name="password" value="Qaswe_123"/>
+    </bean>
+
+	<!--   Global cash man TLM PLN24500 database -->
+    <bean id="GlobalcashmanmdataSource" class="org.apache.tomcat.jdbc.pool.DataSource" destroy-method="close">
+        <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
+        <property name="url" value="jdbc:oracle:thin:@//166.13.200.56:1522/PLN24500_CASHMAN_APP.WORLD"/>
+        <property name="username" value="tlm_supp_ro"/>
+        <property name="password" value="tlm_supp_ro"/>
+    </bean>
+
+	<!--   MD PROD DB connection -->
+    <bean id="MDSWebProddataSource" class="org.apache.tomcat.jdbc.pool.DataSource" destroy-method="close">
+        <property name="driverClassName" value="net.sourceforge.jtds.jdbc.Driver"/>
+        <property name="url" value="jdbc:jtds:sqlserver://169.41.33.100;instance=PINDX00400;integrated security=false"/>
+        <property name="username" value="MatchDerivatives"/>
+        <property name="password" value="md2008"/>
+    </bean>
+
+	<!--   MD DR DB connection -->
+    <bean id="MDSWebDRdataSource" class="org.apache.tomcat.jdbc.pool.DataSource" destroy-method="close">
+        <property name="driverClassName" value="net.sourceforge.jtds.jdbc.Driver"/>
+        <property name="url" value="jdbc:jtds:sqlserver://169.34.97.183;instance=PHKDX01300;integrated security=false"/>
+        <property name="username" value="MatchDerivatives"/>
+        <property name="password" value="md2008"/>
+    </bean>
+
+	<!--   MD Imatch PROD DB connection -->
+    <bean id="MDImatchProddataSource" class="org.apache.tomcat.jdbc.pool.DataSource" destroy-method="close">
+        <property name="driverClassName" value="net.sourceforge.jtds.jdbc.Driver"/>
+        <property name="url" value="jdbc:jtds:sqlserver://169.41.33.100;instance=PINDX00400;integrated security=false"/>
+        <property name="username" value="CSIAccountsDB"/>
+        <property name="password" value="csi2008"/>
+    </bean>
+
+	<!--   MD Imatch DR DB connection -->
+    <bean id="MDImatchDRdataSource" class="org.apache.tomcat.jdbc.pool.DataSource" destroy-method="close">
+        <property name="driverClassName" value="net.sourceforge.jtds.jdbc.Driver"/>
+        <property name="url" value="jdbc:jtds:sqlserver://169.34.97.183;instance=PHKDX01300;integrated security=false"/>
+        <property name="username" value="CSIAccountsDB"/>
+        <property name="password" value="csi2008"/>
+    </bean>
+
+	<!--   MD protector PROD DB connection -->
+    <bean id="MDProtProddataSource" class="org.apache.tomcat.jdbc.pool.DataSource" destroy-method="close">
+        <property name="driverClassName" value="net.sourceforge.jtds.jdbc.Driver"/>
+        <property name="url" value="jdbc:jtds:sqlserver://169.41.33.101;instance=PINDX00500;integrated security=false"/>
+        <property name="username" value="OM"/>
+        <property name="password" value="om2008"/>
+    </bean>
+
+	<!--   MD protector DB connection -->
+    <bean id="MDProtDRdataSource" class="org.apache.tomcat.jdbc.pool.DataSource" destroy-method="close">
+        <property name="driverClassName" value="net.sourceforge.jtds.jdbc.Driver"/>
+        <property name="url" value="jdbc:jtds:sqlserver://169.34.97.184;instance=PHKDX01400;integrated security=false"/>
+        <property name="username" value="OM"/>
+        <property name="password" value="om2008"/>
+    </bean>    
+  <!--
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource" ref="ldmdataSource"/>
+    </bean>
+     -->
+     
+   <util:list  id="dbnameList"  list-class="java.util.ArrayList">
+	   	<value>LDMDB</value>
+	   	<value>GCMMDB</value>
+	   	<value>CVDBCHECKOUT</value>
+	   	<value>CVEMEADBCHECKOUT</value>
+	   	<value>LDMDB</value>
+	   	<value>OPUSDB</value>
+	   	<value>CDRDB</value>
+	   	<value>TLMDB</value>
+	   	<value>GCMTLMDB</value>
+	   	<value>MDWDBCHECKOUT</value>
+	   	<value>MDIDBCHECKOUT</value>
+	   	<value>MDPDBCHECKOUT</value>
+	   	
+   	</util:list>
+   
+   <util:list  id="urlList"  list-class="java.util.ArrayList"> 
+	   	<value>ldmUnprocessedLink</value>
+	   	<value>gcmmLink2</value>
+	   	<value>dbCheckout</value>
+	   	<value>dbCheckoutEMEA</value>
+	   	<value>dbCheckout</value>
+	   	<value>dbCheckout</value>
+	   	<value>dbCheckout</value>
+	   	<value>dbCheckout</value>
+	   	<value>dbCheckout</value>
+	   	<value>dbCheckout</value>
+	   	<value>dbCheckout</value>
+	   	<value>dbCheckout</value>
+   	</util:list>
+   
+   <util:list id="QueryList"  list-class="java.util.ArrayList"> 
+	   	<value>select count( * ) from futures.EXMAN_STAGING where REGION = 'LONDON' and process_time_stamp is null</value>
+	   	<value>select count( * ) from futures.EXMAN_STAGING where REGION = 'LONDON' and process_time_stamp is null</value>
+	   	<value>select name from v$database } select market from cv_welcome where rownum &#60; 2</value>
+	   	<value>select market from cvision.cv_welcome where rownum &#60; 2</value>
+	   	<value>select 'X' from dual</value>
+	   	<value>select 'X' from dual } select GET_PREV_BIZ_DATE from dual </value>
+	   	<value>select dummy from dual } Select PREV_BUSINESS_DATE  From gmirpt.SD_GMI_PROCDATE  Where REGION_IND = 'ATL'</value>
+	   	<value>select 'X' from dual</value>
+	   	<value>select 'X' from dual } select count(*) from TLMBUS.CLUSTER_INFO</value>
+	   	<value>SELECT GETDATE() } select COUNT(*) from MatchDerivatives.dbo.tb_LoginDetails </value>
+	   	<value>SELECT GETDATE() } select COUNT(*) from CSIAccountsDB.dbo.ACCOUNT_MAST </value>
+	   	<value>SELECT GETDATE() } select COUNT(*) from ProtectorDotNet.dbo.tb_client </value>
+   	</util:list>
+     
+  <bean id="DBQueryBean" class="com.connection.impl.DBQueryImpl">
+     <property name="DBName">
+	 	<ref  bean="dbnameList"/>
+     </property>
+     <property name="UrlName">
+	 	<ref  bean="urlList"/>
+     </property>
+     <property name="QueryString">
+	 	<ref  bean="QueryList"/>
+     </property>     
+  </bean>
+
+  <bean id="LdmDatabaseBean" class="com.connection.impl.LDMConnectionImpl">
+     <property name="dataSource" ref="ldmdataSource"/>
+     <property name="dbQuery" ref="DBQueryBean"/>
+  </bean>
+
+  <bean id="DBCheckoutBean" class="com.connection.impl.DBCheckoutImpl">
+     <property name="CVTSEdataSource" ref="cvTSEdataSource"/>
+     <property name="CVHKdataSource" ref="cvHKdataSource"/>
+     <property name="CVSGXdataSource" ref="cvSGXdataSource"/>
+     <property name="CVTOCOMdataSource" ref="cvTOCOMdataSource"/>
+     <property name="CVLN1dataSource" ref="cvLN1dataSource"/>
+     <property name="CVLN3dataSource" ref="cvLN3dataSource"/>
+     <property name="dbQuery" ref="DBQueryBean"/>
+  </bean>
+
+  <bean id="cdrcommgrlink" class="com.implementation.LnkConnectionCheck">
+  	<property name="urlIDDesc" value="cdrcommgr" />
+  	<property name="urlIDGroup" value="cdrlink" />
+  	<property name="urlLink" value="http://pns15a-0215.corpny.csfb.com:21212/CommissionMngr" />
+  	<property name="urlDescription" value="CDR CommissionMngr" />
+  </bean>
+
+  <bean id="cdrcommgrNewlink" class="com.implementation.LnkConnectionCheck">
+  	<property name="urlIDDesc" value="cdrcommgr" />
+  	<property name="urlIDGroup" value="cdrlink" />
+  	<property name="urlLink" value="https://commfee.csintra.net/CommissionMngr/" />
+  	<property name="urlDescription" value="CDR CommissionMngr" />
+  </bean>
+
+  <bean id="cdreportmgrlink" class="com.implementation.LnkConnectionCheck">
+  	<property name="urlIDDesc" value="cdrrptmgr" />
+  	<property name="urlIDGroup" value="cdrlink" />
+  	<property name="urlLink" value="https://commfee.csintra.net/ReportingMngr/" />
+  	<property name="urlDescription" value="CDR ReportingMngr" />
+  </bean>
+
+  	
+  <bean id="cdrgatlink" class="com.implementation.LnkConnectionCheck">
+  	<property name="urlIDDesc" value="cdrgat" />
+  	<property name="urlIDGroup" value="cdrlink" />
+  	<property name="urlLink" value="https://cdg-prd.csintra.net/cdg/login.html" />
+  	<property name="urlDescription" value="CDR GAT Tool" />
+  </bean>
+
+  <bean id="tlmWebConnectlink" class="com.implementation.LnkConnectionCheck">
+  	<property name="urlIDDesc" value="TLMWebConnect" />
+  	<property name="urlIDGroup" value="tlmlink" />
+  	<property name="urlLink" value="https://tlmapp.csintra.net/WebConnect/login/login.jsp" />
+  	<property name="urlDescription" value="TLM Web Connnect" />
+  </bean>
+
+  <bean id="gcmmWebConnectlink" class="com.implementation.LnkConnectionCheck">
+  	<property name="urlIDDesc" value="GCMMWebConnect" />
+  	<property name="urlIDGroup" value="gcmmlink" />
+  	<property name="urlLink" value="https://dapap.csintra.net/GCMM/" />
+  	<property name="urlDescription" value="GCMM Web Connnect" />
+  </bean>
+
+  <bean id="matchDerivMDSConnectlink" class="com.implementation.LnkConnectionCheck">
+  	<property name="urlIDDesc" value="matchDerivMDSConnect" />
+  	<property name="urlIDGroup" value="matchlink" />
+  	<property name="urlLink" value="http://inw20039778.gbl.ad.hedani.net/MDSWeb/Common/ASPX/Login.aspx" />
+  	<property name="urlDescription" value="MDS Web Connnect" />
+  </bean>
+
+  <bean id="matchDeriviMatchConnectlink" class="com.implementation.LnkConnectionCheck">
+  	<property name="urlIDDesc" value="matchDeriviMatchConnect" />
+  	<property name="urlIDGroup" value="matchlink" />
+  	<property name="urlLink" value="http://inw20039778.gbl.ad.hedani.net/iMatch3.2/ASPX/Login.aspx" />
+  	<property name="urlDescription" value="IMatch Web Connnect" />
+  </bean>
+
+  <bean id="matchDerivMDSDRConnectlink" class="com.implementation.LnkConnectionCheck">
+  	<property name="urlIDDesc" value="matchDerivMDSDRConnect" />
+  	<property name="urlIDGroup" value="matchlink" />
+  	<property name="urlLink" value="http://SGW20039779.gbl.ad.hedani.net/MDSWeb/Common/ASPX/Login.aspx" />
+  	<property name="urlDescription" value="MDS DR Web Connnect" />
+  </bean>
+
+  <bean id="matchDeriviMatchDRConnectlink" class="com.implementation.LnkConnectionCheck">
+  	<property name="urlIDDesc" value="matchDeriviMatchDRConnect" />
+  	<property name="urlIDGroup" value="matchlink" />
+  	<property name="urlLink" value="http://sgw20039779.gbl.ad.hedani.net/iMatch3.2/ASPX/Login.aspx" />
+  	<property name="urlDescription" value="IMatch DR Web Connnect" />
+  </bean>
+
+  
+  <bean id="linkConnectionArray" class="com.implementation.LnkConnectionWrapper">
+  	<property name="lnkConnectionCheck">
+	  	<list>
+		   <ref bean="cdrcommgrlink" />
+		   <ref bean="cdrcommgrNewlink" />
+		   <ref bean="cdreportmgrlink" />
+		   <ref bean="cdrgatlink" />
+		   <ref bean="tlmWebConnectlink" />
+		   <ref bean="gcmmWebConnectlink" />
+		   <ref bean="matchDerivMDSConnectlink" />
+		   <ref bean="matchDeriviMatchConnectlink" />
+		   <ref bean="matchDerivMDSDRConnectlink" />
+		   <ref bean="matchDeriviMatchDRConnectlink" />		   
+		</list>
+	 </property>
+  </bean>
+
+
+	<!-- query to be used for Global cash man TLM Cluster info query execution 
+	1st query will gather the column name 
+	2nd query will gathet the query results
+
+   <util:list id="GCMTLMClusterQuerys"  list-class="java.util.ArrayList">
+   	<value>select column_name from ( 
+   select 'PRODUCT' column_name,1 seq  from dual union select 'IP_ADDRESS' column_name, 2 seq from dual
+ union select 'HTTP_PORT' column_name, 3 seq  from dual union select 'RMI_PORT' column_name, 4 seq  from dual
+ union select 'NODE_TYPE' column_name, 5 seq  from dual union select 'HOST_NAME' column_name, 6 seq from dual union
+ select 'STATUS' column_name, 7 seq from dual union select 'LAST_SEEN' column_name, 8 seq from dual ) order by seq
+   	</value>
+    <value>select * from TLMBUS.CLUSTER_INFO</value>
+   </util:list>
+	-->
+	
+ <!--  this bean contains the information for the Global TLM cluster info query to be used -->
+  <bean id="GCMTLMClusterQueryBean" class="com.connection.impl.QuerySpecifierWrapper">
+     <property name="columnQuery" value="select column_name from ( 
+   select 'PRODUCT' column_name,1 seq  from dual union select 'IP_ADDRESS' column_name, 2 seq from dual
+ union select 'HTTP_PORT' column_name, 3 seq  from dual union select 'RMI_PORT' column_name, 4 seq  from dual
+ union select 'NODE_TYPE' column_name, 5 seq  from dual union select 'HOST_NAME' column_name, 6 seq from dual union
+ select 'STATUS' column_name, 7 seq from dual union select 'LAST_SEEN' column_name, 8 seq from dual ) order by seq" />
+ 
+ 	<property name="actualQuery" value="select PRODUCT,IP_ADDRESS,HTTP_PORT,RMI_PORT,NODE_TYPE,HOST_NAME,STATUS,to_char(LAST_SEEN,'DD-MON-YYYY HH24:MI:SS') LAASTSEEN  from TLMBUS.CLUSTER_INFO" />
+ 	<property name="queryIDNameIdentifer" value="ClusterInfo" />
+  
+  </bean>
+  
+<!--  this bean contains the information for the Global TLM progs info query to be used -->
+  <bean id="GCMTLMProgsQueryBean" class="com.connection.impl.QuerySpecifierWrapper">
+     <property name="columnQuery" value="select column_name from ( select 'PROGNAME' column_name,1 seq  from dual union  select 'SERVER_NO' column_name,2 seq  from dual) ORDER BY seq" />
+ 
+ 	<property name="actualQuery" value="select PROGNAME,SERVER_NO  from TLMBUS.PROGS" />
+ 	<property name="queryIDNameIdentifer" value="MatchProgs" />
+  
+  </bean>  
+
+<!--  this bean contains the information for the Global TLM sys control info query to be used -->
+  <bean id="GCMTLMSysControlQueryBean" class="com.connection.impl.QuerySpecifierWrapper">
+     <property name="columnQuery" value="select column_name from ( select 'REGION_NAME' column_name,1 seq  from dual union  select 'CURRENT_BUS_DATE' column_name,2 seq  from dual
+ union select 'UI_CURRENT_BUS_DATE' column_name,3 seq  from dual 
+ union select 'ACTIVE_STATUS' column_name,4 seq  from dual)
+ ORDER BY seq" />
+ 
+ 	<property name="actualQuery" value="select  REGION_NAME, to_char(CURRENT_BUS_DATE,'DD-MON-YYYY') CURRENT_BUSI_DATE,to_char(UI_CURRENT_BUS_DATE,'DD-MON-YYYY') UI_CURRENT_BUSI_DATE,ACTIVE_STATUS  from TLMBUS.CMS_REF_SYSCONTROL" />
+ 	<property name="queryIDNameIdentifer" value="SysControl" />
+  
+  </bean>  
+  
+  <!--  this bean contains the query information for the clearvision audit sql -->
+  
+  <bean id="CVAuditStaticUserQueryBean" class="com.connection.impl.QuerySpecifierWrapper">
+  
+    <property name="columnQuery" value="select column_name from ( select 'db_stamp' column_name,1 seq  from dual union  select 'db_seq' column_name,2 seq  from dual
+  union select 'operator' column_name,3 seq  from dual 
+  union select 'action' column_name,4 seq  from dual
+  union select 'cv_table' column_name,5 seq  from dual
+  union select 'id' column_name,6 seq  from dual
+  union select 'comments' column_name,7 seq  from dual)  
+  ORDER BY seq" />
+ 
+ 	<property name="actualQuery" value="select to_char(db_stamp,'DD-MON-YYYY HH:MI:SS AM')stamp_string ,db_seq,operator, action, cv_table, id, comments  from CVISION.CV_AUDIT_STATIC_USER where ID in ( select CVISION.CV_ACCOUNT.IDXACCOUNT from CVISION.CV_ACCOUNT where name in (:names)) " /> 	
+ 	<property name="queryIDNameIdentifer" value="CVAuditStaticUser" />
+  
+  </bean>  
+ 
+ <bean id="CVModifQueryBean" class="com.connection.impl.QuerySpecifierWrapper">
+  
+    <property name="columnQuery" value="select column_name from ( select 'keyid' column_name,1 seq  from dual 
+  union select 'stamp' column_name,3 seq  from dual 
+  union select 'clair' column_name,4 seq  from dual)
+  ORDER BY seq" />
+ 
+ 	<property name="actualQuery" value="select keyid, to_char(stamp,'DD-MON-YYYY HH:MI:SS AM') stamp_string, clair from CVISION.CV_MODIF where KEYID in (select CV_TABLE from CVISION.CV_AUDIT_STATIC_USER where ID in ( select CVISION.CV_ACCOUNT.IDXACCOUNT from CVISION.CV_ACCOUNT where name in (:names)) " />
+ 	<property name="queryIDNameIdentifer" value="CVModif" />
+  
+  </bean>  
+ 
+  
+  <bean id="querySpecifierWrapperListBean" class="com.connection.impl.QuerySpecifierWrapperList">
+  	<property name= "querySpecifierWrapperList">
+		<list>
+			<ref bean="GCMTLMClusterQueryBean"/>
+			<ref bean="GCMTLMProgsQueryBean" />
+			<ref bean="GCMTLMSysControlQueryBean" />
+			<ref bean="CVAuditStaticUserQueryBean" />
+			<ref bean="CVModifQueryBean" />
+		</list>
+  	</property>
+  </bean>
+
+  <bean id="ProgsDaoImplBean" class="com.dao.impl.ProgsDaoImpl"> 
+  	<property name="GlobalcashmanmdataSource" ref="GlobalcashmanmdataSource" /> 
+  </bean>
+
+  <bean id="SysControlDaoImplBean" class="com.dao.impl.SysControlDaoImpl"> 
+  	<property name="GlobalcashmanmdataSource" ref="GlobalcashmanmdataSource" /> 
+  </bean>
+  
+  <bean id="CVAuditStaticUserImplBean" class="com.dao.impl.CVAuditStaticUserImpl"> 
+  
+  </bean>
+ 
+ <!-- 
+  <bean id="CVAuditStaticUserParamsSetClassBean" class="com.dao.impl.CVAuditStaticUserParamsSetClass">
+    <property name="names">
+    <list>
+    </list>
+    </property>
+  </bean>
+  
+  <bean id="CVAuditStaicNamesBean" class="com.dao.impl.CVAuditStaticUserParams">
+    <property name="names" value="#{T(com.dao.impl.CVAuditStaticUserParamsSetClass).getNameListValues()}"/>
+  </bean>
+ 
+ -->
+ 
+  <bean id="queryexecutorimplbean" class="com.connection.impl.QueryExecutorImpl">
+  </bean>
+
+  <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver" />
+    
+</beans>

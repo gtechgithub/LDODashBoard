@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServerDetails>
+	<Servers>
+		<Server>
+			<serverDescription>Eurex CSBLO (All products except FDAX and FESX) SG/ES</serverDescription>
+			<serverName>GBW20028315</serverName>
+			<!--  actual configuration would be \\SGW20036024\clearvision -->
+			<serverSharedPath>\\GBW20028315\clearvision$</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>GBW20028321</DRserverName>
+				<DRserverSharedPath>\\GBW20028321\clearvision$</DRserverSharedPath>
+			</DRServer>
+		</Server>
+		<Server>
+			<serverDescription>Eurex CSNCM  SG/ES</serverDescription>
+			<serverName>GBW20028315</serverName>
+			<!--  actual configuration would be \\SGW20036024\clearvision -->
+			<serverSharedPath>\\GBW20028315\clearvision$</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>GBW20028321</DRserverName>
+				<DRserverSharedPath>\\GBW20028321\clearvision$</DRserverSharedPath>
+			</DRServer>
+		</Server>
+		<Server>
+			<serverDescription>Eurex CSILO(All products except FDAX and FESX) ES</serverDescription>
+			<serverName>GBW20036361</serverName>
+			<!--  actual configuration would be \\SGW20036024\clearvision -->
+			<serverSharedPath>\\GBW20036361\clearvision$</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>GBW20036367</DRserverName>
+				<DRserverSharedPath>\\GBW20036367\clearvision$</DRserverSharedPath>
+			</DRServer>
+		</Server>
+		<Server>
+			<serverDescription>Eurex CSBLO (FDAX and FESX only) ES</serverDescription>
+			<serverName>GBW20036361</serverName>
+			<!--  actual configuration would be \\SGW20036024\clearvision -->
+			<serverSharedPath>\\GBW20036361\clearvision$</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>GBW20036367</DRserverName>
+				<DRserverSharedPath>\\GBW20036367\clearvision$</DRserverSharedPath>
+			</DRServer>
+		</Server>		
+		<Server>
+			<serverDescription>Eurex CSILO(FDAX and FESX only) SG/ES</serverDescription>
+			<serverName>GBWP2506136</serverName>
+			<!--  actual configuration would be \\SGW20036024\clearvision -->
+			<serverSharedPath>\\GBWP2506136\clearvision$</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>GBWP2506131</DRserverName>
+				<DRserverSharedPath>\\GBWP2506131\clearvision$</DRserverSharedPath>
+			</DRServer>
+		</Server>		
+		<Server>
+			<serverDescription>ICE Europe CSI	SG/ES</serverDescription>
+			<serverName>GBW20036362</serverName>
+			<!--  actual configuration would be \\SGW20036024\clearvision -->
+			<serverSharedPath>\\GBW20036362\clearvision$</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>GBW20036368</DRserverName>
+				<DRserverSharedPath>\\GBW20036368\clearvision$</DRserverSharedPath>
+			</DRServer>
+		</Server>	
+		<Server>
+			<serverDescription>ICE Europe CSB 	SG/ES</serverDescription>
+			<serverName>GBW20036364</serverName>
+			<!--  actual configuration would be \\SGW20036024\clearvision -->
+			<serverSharedPath>\\GBW20036364\clearvision$</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>GBW20036370</DRserverName>
+				<DRserverSharedPath>\\GBW20036370\clearvision$</DRserverSharedPath>
+			</DRServer>
+		</Server>	
+		<Server>
+			<serverDescription>ICE Europe CSO  SG/ES</serverDescription>
+			<serverName>GBW20036364</serverName>
+			<!--  actual configuration would be \\SGW20036024\clearvision -->
+			<serverSharedPath>\\GBW20036364\clearvision$</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>GBW20036370</DRserverName>
+				<DRserverSharedPath>\\GBW20036370\clearvision$</DRserverSharedPath>
+			</DRServer>
+		</Server>		
+		<Server>
+			<serverDescription>IFL CSI ES	(IFLL)</serverDescription>
+			<serverName>GBW20036363</serverName>
+			<!--  actual configuration would be \\SGW20036024\clearvision -->
+			<serverSharedPath>\\GBW20036363\clearvision$</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>GBW20036369</DRserverName>
+				<DRserverSharedPath>\\GBW20036369\clearvision$</DRserverSharedPath>
+			</DRServer>
+		</Server>	
+		<Server>
+			<serverDescription>IFL CSI ES (IFLO and IFLX)</serverDescription>
+			<serverName>GBWP2506138</serverName>
+			<!--  actual configuration would be \\SGW20036024\clearvision -->
+			<serverSharedPath>\\GBWP2506138\clearvision$</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>GBWP2506133</DRserverName>
+				<DRserverSharedPath>\\GBWP2506133\clearvision$</DRserverSharedPath>
+			</DRServer>
+		</Server>
+		<Server>
+			<serverDescription>IFL CSB ES	(IFLL)</serverDescription>
+			<serverName>GBW20036364</serverName>
+			<!--  actual configuration would be \\SGW20036024\clearvision -->
+			<serverSharedPath>\\GBW20036364\clearvision$</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>GBW20036370</DRserverName>
+				<DRserverSharedPath>\\GBW20036370\clearvision$</DRserverSharedPath>
+			</DRServer>
+		</Server>	
+		<Server>
+			<serverDescription>IFL CSB ES (IFLO and IFLX)</serverDescription>
+			<serverName>GBW20036364</serverName>
+			<!--  actual configuration would be \\SGW20036024\clearvision -->
+			<serverSharedPath>\\GBW20036364\clearvision$</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>GBW20036370</DRserverName>
+				<DRserverSharedPath>\\GBW20036370\clearvision$</DRserverSharedPath>
+			</DRServer>
+		</Server>	
+		<Server>
+			<serverDescription>LMESMART CSM SG</serverDescription>
+			<serverName>GBW20036365</serverName>
+			<!--  actual configuration would be \\SGW20036024\clearvision -->
+			<serverSharedPath>\\GBW20036365\clearvision$</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>GBW20036371</DRserverName>
+				<DRserverSharedPath>\\GBW20036371\clearvision$</DRserverSharedPath>
+			</DRServer>
+		</Server>
+		<Server>
+			<serverDescription>MATIF CEA SG </serverDescription>
+			<serverName>GBW20036365</serverName>
+			<!--  actual configuration would be \\SGW20036024\clearvision -->
+			<serverSharedPath>\\GBW20036365\clearvision$</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>GBW20036371</DRserverName>
+				<DRserverSharedPath>\\GBW20036371\clearvision$</DRserverSharedPath>
+			</DRServer>
+		</Server>
+		<Server>
+			<serverDescription>MONEP 517 SG  </serverDescription>
+			<serverName>GBW20036366</serverName>
+			<!--  actual configuration would be \\SGW20036024\clearvision -->
+			<serverSharedPath>\\GBW20036366\clearvision$</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>GBW20036372</DRserverName>
+				<DRserverSharedPath>\\GBW20036372\clearvision$</DRserverSharedPath>
+			</DRServer>
+		</Server>
+		<Server>
+			<serverDescription>MONEP 4359 SG  </serverDescription>
+			<serverName>GBWP2506139</serverName>
+			<!--  actual configuration would be \\SGW20036024\clearvision -->
+			<serverSharedPath>\\GBWP2506139\clearvision$</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>GBWP2506134</DRserverName>
+				<DRserverSharedPath>\\GBWP2506134\clearvision$</DRserverSharedPath>
+			</DRServer>
+		</Server>		
+		<Server>
+			<serverDescription>MEFF A185   </serverDescription>
+			<serverName>GBW20035980</serverName>
+			<!--  actual configuration would be \\SGW20036024\clearvision -->
+			<serverSharedPath>\\GBW20035980\clearvision$</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>GBW20035987</DRserverName>
+				<DRserverSharedPath>\\GBW20035987\clearvision$</DRserverSharedPath>
+			</DRServer>
+		</Server>			
+		<Server>
+			<serverDescription>MEFF A185   </serverDescription>
+			<serverName>GBW20035980</serverName>
+			<!--  actual configuration would be \\SGW20036024\clearvision -->
+			<serverSharedPath>\\GBW20035980\clearvision$</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>GBW20035987</DRserverName>
+				<DRserverSharedPath>\\GBW20035987\clearvision$</DRserverSharedPath>
+			</DRServer>
+		</Server>	
+		<Server>
+			<serverDescription>EDX   </serverDescription>
+			<serverName>GBW20035980</serverName>
+			<!--  actual configuration would be \\SGW20036024\clearvision -->
+			<serverSharedPath>\\GBW20035980\clearvision$</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>GBW20035987</DRserverName>
+				<DRserverSharedPath>\\GBW20035987\clearvision$</DRserverSharedPath>
+			</DRServer>
+		</Server>
+		<Server>
+			<serverDescription>IDEM 7800   </serverDescription>
+			<serverName>GBW20035983</serverName>
+			<!--  actual configuration would be \\SGW20036024\clearvision -->
+			<serverSharedPath>\\GBW20035980\clearvision$</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>GBW20028317</DRserverName>
+				<DRserverSharedPath>\\GBW20028317\clearvision$</DRserverSharedPath>
+			</DRServer>
+		</Server>
+		<Server>
+			<serverDescription>NOMX</serverDescription>
+			<serverName>GBW20035983</serverName>
+			<!--  actual configuration would be \\SGW20036024\clearvision -->
+			<serverSharedPath>\\GBW20035983\clearvision$</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>GBW20028317</DRserverName>
+				<DRserverSharedPath>\\GBW20028317\clearvision$</DRserverSharedPath>
+			</DRServer>
+		</Server>												
+		<Server>
+			<serverDescription>4M CSB4M </serverDescription>
+			<serverName>GBW20035981</serverName>
+			<!--  actual configuration would be \\SGW20036024\clearvision -->
+			<serverSharedPath>\\GBW20035981\clearvision$</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>GBW20035988</DRserverName>
+				<DRserverSharedPath>\\GBW20035988\clearvision$</DRserverSharedPath>
+			</DRServer>
+		</Server>
+		<Server>
+			<serverDescription>P01 Member Server 421 for All Markets except Eurex</serverDescription>
+			<serverName>GBW20035985</serverName>
+			<!--  actual configuration would be \\SGW20036024\clearvision -->
+			<serverSharedPath>\\GBW20035985\clearvision$</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>GBW20028319</DRserverName>
+				<DRserverSharedPath>\\GBW20028319\clearvision$</DRserverSharedPath>
+			</DRServer>
+		</Server>			
+		<Server>
+			<serverDescription>P01 Member Server 421 for Eurex</serverDescription>
+			<serverName>GBW20036361</serverName>
+			<!--  actual configuration would be \\SGW20036024\clearvision -->
+			<serverSharedPath>\\GBW20036361\clearvision$</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>GBW20036367</DRserverName>
+				<DRserverSharedPath>\\GBW20036367\clearvision$</DRserverSharedPath>
+			</DRServer>
+		</Server>				
+		<Server>
+			<serverDescription>P03 Member Server 421 for ICE/IFL</serverDescription>
+			<serverName>GBW20036363</serverName>
+			<!--  actual configuration would be \\SGW20036024\clearvision -->
+			<serverSharedPath>\\GBW20036363\clearvision$</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>GBW20036369</DRserverName>
+				<DRserverSharedPath>\\GBW20036369\clearvision$</DRserverSharedPath>
+			</DRServer>
+		</Server>				
+		<Server>
+			<serverDescription>P03 Member Server 421 for All Markets exceptL</serverDescription>
+			<serverName>GBW20035986</serverName>
+			<!--  actual configuration would be \\SGW20036024\clearvision -->
+			<serverSharedPath>\\GBW20035986\clearvision$</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>GBW20028320</DRserverName>
+				<DRserverSharedPath>\\GBW20028320\clearvision$</DRserverSharedPath>
+			</DRServer>
+		</Server>				
+		<Server>
+			<serverDescription>PLN20100 member/Security server</serverDescription>
+			<serverName>GBW20035985</serverName>
+			<!--  actual configuration would be \\SGW20036024\clearvision -->
+			<serverSharedPath>\\GBW20035985\clearvision$</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>GBW20028319</DRserverName>
+				<DRserverSharedPath>\\GBW20028319\clearvision$</DRserverSharedPath>
+			</DRServer>
+		</Server>		
+		<Server>
+			<serverDescription>PLN20300 member/Security server</serverDescription>
+			<serverName>GBW20035986</serverName>
+			<!--  actual configuration would be \\SGW20036024\clearvision -->
+			<serverSharedPath>\\GBW20035986\clearvision$</serverSharedPath>
+			<serverUserId></serverUserId>
+			<serverUserPassword></serverUserPassword>
+			<DRServer>
+				<DRserverName>GBW20028320</DRserverName>
+				<DRserverSharedPath>\\GBW20028320\clearvision$</DRserverSharedPath>
+			</DRServer>
+		</Server>								
+	</Servers>
+</ServerDetails>

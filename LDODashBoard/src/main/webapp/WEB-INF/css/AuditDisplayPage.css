@@ -1,0 +1,38 @@
+@CHARSET "ISO-8859-1";
+
+label
+{
+  width: 120px;
+  display: inline-block;
+  vertical-align: top;
+  
+}
+
+select
+{
+   width: 150px;
+   display: inline-block;
+   vertical-align: middle;
+}
+
+textarea
+{
+  width: 250px;
+  height: 100px;
+}
+
+
+form {
+	width: 70%;
+	margin: 0 auto;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
